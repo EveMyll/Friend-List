@@ -7,8 +7,8 @@
 <body>
 	<h1>My friends</h1>
 	<table>
-		<tr th:each="firstName + lastName: ${friends}">
-			<td th:text="${friend.firstName} + ${friend.lastName}"></td>
+		<tr th:each="name: ${friends}">
+			<td th:text="${friend.name}"></td>
 		</tr>
 	</table>
 </body>

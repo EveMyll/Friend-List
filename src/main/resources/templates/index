@@ -9,8 +9,8 @@
     <form action="#" th:action="@{/index}" th:object="${friend}" method="post">
     	<table>
         <tr>
-        	<td>Name: <input type="text" th:field="*{firstName+lastName}" /></td>
-        	<td th:if="${#fields.hasErrors('firstName + lastName')}" th:errors="*{firstName + lastName}">Error</td>
+        	<td>Name: <input type="text" th:field="*{name}" /></td>
+        	<td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Error</td>
         </tr>
         </table>
         <p><input type="submit" value="Submit" /></p>
